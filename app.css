@@ -1,0 +1,154 @@
+html{
+    padding-right: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+/* RESPONSIVENESS FOR THE MOBILE VIEW */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+}
+.carModel{
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 1288px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0px 0px;
+    /* height: 150vh; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.cars{
+    height: 50vh;
+    width: 100%;
+    padding: 39px 30px;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    
+
+    
+}
+.left{
+    background-color: #e28525;
+    /* border-top-left-radius: 7px;
+    border-top-right-radius: 7px ; */
+
+}
+
+.middle{
+    background-color: #016972;
+   
+}
+.right{
+    background-color: #00403f;
+    /* border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px; */
+   
+}
+
+h2,p{
+    font-family: monospace;
+    color: rgb(235, 224, 224);
+    padding-bottom: 20px;
+}
+p{
+    padding-bottom: 50px;
+    width: 60%;
+}
+.left p{
+    padding-bottom: 65px;
+}
+h2{
+    font-size: 1.5rem;
+}
+img{
+    padding: 20px 0px;
+    padding-right: 50px;
+
+}
+button{
+   
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid white;
+    padding: 10px 30px;
+    background-color: white;
+}
+.left button{
+    color: #e28525;
+    
+}
+.middle button{
+    color: #016972;
+}
+.right button{
+    color: #00403f;
+}
+.left button:hover{
+    background-color: #e28525;
+    color: white;
+    border: 2px solid white;
+}
+.middle button:hover{
+    background-color: #016972;
+    color: white;
+    border: 2px solid white;
+}
+.right button:hover{
+    background-color: #00403f;
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+/* RESPONSIVENESSS FOR THE DESKTOP VIEW */
+
+@media (min-width:1288px){
+    .carModel{
+        flex-direction: row;
+        background-color: white;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 60%;
+        display: flex;
+        text-align: start;
+        margin: 100px 0px;
+    }
+    
+    
+    .cars{
+        height: 55vh;
+        width: 20%;
+        border-bottom: none;
+        padding: 25px 70px;
+        border-bottom: 1px solid;         
+    }
+    p{
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .cars:last-child{
+        border-right: none;
+    }
+
+    .left{
+        border-radius: 10px 0px 0px 10px;
+    }
+    .right{
+        border-radius: 0px 10px 10px 0px;
+        
+    }
+}
